@@ -1,8 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="<?= base_url('css/bootstrap.min.css') ?>" rel="stylesheet" media="screen">
+		<link href="<?= base_url('css/bootstrap-responsive.css') ?>" rel="stylesheet">
+		<link href="<?= base_url('css/micss.css') ?>" rel="stylesheet">
+		<title> Mi Sitio </title>
+	</head>
+	<body>
+
 <h1>Listado de Personal</h1>
 <pre>
 <?php
 
-$plantilla = array ( 'table_open'  => '<table border="2" cellpadding="2" cellspacing="1" class="mytable">' );
+$plantilla = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" class="mytable">' );
 $this->table->set_template($plantilla); 
 
 $this->table->set_heading('ID', 'R.U.T.', 'NOMBRES', 'APELLIDOS', 'PROFESION');
@@ -13,3 +25,6 @@ foreach ($obtener_personal as $fila)
 echo $this->table->generate(); 
 
 ?>
+</body>
+</html>
+
