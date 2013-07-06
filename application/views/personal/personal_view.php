@@ -17,14 +17,20 @@
 $plantilla = array ( 'table_open'  => '<table border="1" cellpadding="2" cellspacing="1" class="mytable">' );
 $this->table->set_template($plantilla); 
 
-$this->table->set_heading('ID', 'R.U.T.', 'NOMBRES', 'APELLIDOS', 'PROFESION');
+$i = 0;
+
+$this->table->set_heading('Nº', 'ID', 'R.U.T.', 'NOMBRES', 'APELLIDOS', 'PROFESION');
 foreach ($obtener_personal as $fila)
 {
-	$this->table->add_row($fila->id_empleado, $fila->rut, $fila->nombres, $fila->apellidos, $fila->profesion );
+	$this->table->add_row(++$i, $fila->id_empleado, $fila->rut, $fila->nombres, $fila->apellidos, $fila->profesion );
 }
 echo $this->table->generate(); 
-
 ?>
+
+<div class="paginacion">
+	<?php echo $paginacion ?>
+</div>
+
 </body>
 </html>
 

@@ -7,8 +7,15 @@ class Personal_model extends CI_Model {
 		parent::__construct();
 	}
 	
-	public function traer_empleados()
+	public function filas()
 	{
+         $consulta = $this->db->get('empleados');
+        return  $consulta->num_rows() ;
+    }
+
+	public function traer_empleados($limit,$start)
+	{
+		$this->db->limit($limit,$start);
 		$query = $this->db->get('empleados');
 		return $query->result();
 	}
