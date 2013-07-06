@@ -6,6 +6,11 @@ class Empleados extends CI_Controller {
 		parent::__construct();
 	}
 
+	public function index()
+	{
+
+	}
+
 	public function ver_personal()
 	{
 		$this->load->model('personal/personal_model');
