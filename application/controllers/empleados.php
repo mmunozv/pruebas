@@ -23,7 +23,7 @@ class Empleados extends CI_Controller {
 	    $desde = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 	 
 	    $opciones['per_page'] = 20;
-	    $opciones['base_url'] = base_url().'index.php/empleados/ver_personal';
+	    $opciones['base_url'] = base_url().'empleados/ver_personal';
 	    $opciones['total_rows'] = $this->personal_model->filas();
 	    $opciones['uri_segment'] = 3;
 	 
@@ -44,6 +44,23 @@ class Empleados extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function recibo_nuevo_empleado()
+	{
+		$data = array(
+			"rut" => $_POST['rut'],
+			"nombres" => $_POST['nombres'],
+			"apellidos" => $_POST['apellidos'],
+			"profesion" => $_POST['profesion']
+		);
+		//print_r($data);
+		$this->db->insert('empleados',$data);
+		redirect( base_url(), 'refresh');
+	}
+
+	public function busca_empleado()
+	{
+		$this->empleados_model->busca_por_id($id);
+	}
 
 }
 

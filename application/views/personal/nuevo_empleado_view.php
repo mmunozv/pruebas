@@ -1,7 +1,7 @@
 <h1>Ingreso de Empleados</h1>
 <hr>
 
-<form class="form-horizontal">
+<form class="form-horizontal" method='post' action='<?= base_url('empleados/recibo_nuevo_empleado') ?>'>
 	<div class="control-group">
 		<label class="control-label" for="rut">R.U.T.</label>
 		<div class="controls">
@@ -11,7 +11,7 @@
 	<div class="control-group">
 		<label class="control-label" for="nombres">Nombres</label>
 		<div class="controls">
-			<input type="text" name="nombres" id="nombre" placeholder="Nombres" class="span5">
+			<input type="text" name="nombres" id="nombres" placeholder="Nombres" class="span5">
 		</div>
 	</div>
 	<div class="control-group">
@@ -25,7 +25,7 @@
 		<div class="controls">
 			<input type="text" name="profesion" id="profesion" placeholder="Profesión" class="span5">
 		</div>
-	</div>	
+	</div>
 	<div class="form-actions">
 		<button type="submit" class="btn btn-primary">Grabar Datos</button>
 		<button type="button" class="btn">Cancelar</button>

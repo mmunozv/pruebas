@@ -19,20 +19,20 @@
 
                     <a class="brand" href="#">Control de Obras</a>
                     <ul class="nav">
-                        <li class="active"><a href="http://localhost/pruebas/index.php/empleados">Inicio</a></li>
-                        <li><a href="http://localhost/pruebas/index.php/empleados/nuevo_empleado">Ingresar</a></li>
-                        <li><a href="http://localhost/pruebas/index.php/empleados/ver_personal">Consultar</a></li>
+                        <li class="active"><a href="http://localhost/pruebas/empleados">Inicio</a></li>
+                        <li><a href="http://localhost/pruebas/empleados/nuevo_empleado">Ingresar</a></li>
+                        <li><a href="http://localhost/pruebas/empleados/ver_personal">Consultar</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Opciones 
+                                Opciones
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="http://localhost/pruebas/index.php/empleados/nuevo_empleado">Ingreso</a></li>
-                                <li><a href="http://localhost/pruebas/index.php/empleados/ver_personal">Consulta</a></li>
+                                <li><a href="http://localhost/pruebas/empleados/nuevo_empleado">Ingreso</a></li>
+                                <li><a href="http://localhost/pruebas/empleados/ver_personal">Consulta</a></li>
                                 <li class="divider"></li>
-                                <li><a href="http://localhost/pruebas/index.php/empleados/ver_personal">Otra consulta</a></li>
-                                <li><a href="http://localhost/pruebas/index.php/empleados/nuevo_empleado">Otro Ingreso</a></li>
+                                <li><a href="http://localhost/pruebas/empleados/ver_personal">Otra consulta</a></li>
+                                <li><a href="http://localhost/pruebas/empleados/nuevo_empleado">Otro Ingreso</a></li>
                             </ul>
                         </li>
                     </ul>

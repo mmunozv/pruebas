@@ -20,6 +20,11 @@ class Personal_model extends CI_Model {
 		return $query->result();
 	}
 
+	public function buscar_por_id($id)
+	{
+		return $this->db->where('id',$id)->limit(1)->get('empleados')->row();
+	}
+
 }
 
 /* End of file personal_view.php */
