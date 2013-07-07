@@ -9,7 +9,9 @@ class Empleados extends CI_Controller {
 
 	public function index()
 	{
-
+		$this->load->view('templates/header');
+		$this->load->view('personal/pruebas_view.php');
+		$this->load->view('templates/footer');
 	}
 
 	public function ver_personal()
@@ -29,8 +31,17 @@ class Empleados extends CI_Controller {
 	 
 	    $data['paginacion'] = $this->pagination->create_links();
 		$data['obtener_personal'] = $this->personal_model->traer_empleados($opciones['per_page'],$desde);
+		$this->load->view('templates/header');
 		$this->load->view('personal/personal_view',$data);
+		$this->load->view('templates/footer');
 
+	}
+
+	public function nuevo_empleado()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('personal/nuevo_empleado_view');
+		$this->load->view('templates/footer');
 	}
 
 
