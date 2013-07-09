@@ -47,10 +47,10 @@ class Empleados extends CI_Controller {
 	public function recibo_nuevo_empleado()
 	{
 		$data = array(
-			"rut" => $_POST['rut'],
-			"nombres" => $_POST['nombres'],
-			"apellidos" => $_POST['apellidos'],
-			"profesion" => $_POST['profesion']
+			"rut" => $this->input->post('rut'),
+			"nombres" => $this->input->post('nombres'),
+			"apellidos" => $this->input->post('apellidos'),
+			"profesion" => $this->input->post('profesion')
 		);
 		//print_r($data);
 		$this->db->insert('empleados',$data);
