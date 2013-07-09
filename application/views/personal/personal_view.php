@@ -11,7 +11,7 @@
 	foreach ($obtener_personal as $fila)
 	{
 		$this->table->add_row(++$i, $fila->id_empleado, $fila->rut, $fila->nombres, $fila->apellidos,
-		 $fila->profesion, '<a href=""><center><i class="icon-edit"></i></center></a>',
+		 $fila->profesion, "<a href='$fila->id_empleado'><center><i class='icon-edit'></i></center></a>",
 		  '<a href=""><center><i class="icon-remove"></i></center></a>' );
 	}
 	echo $this->table->generate(); 
