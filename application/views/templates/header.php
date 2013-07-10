@@ -28,11 +28,13 @@
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="http://localhost/pruebas/empleados/nuevo_empleado">Ingreso</a></li>
-                                <li><a href="http://localhost/pruebas/empleados/ver_personal">Consulta</a></li>
+                                <li><a href="<?= base_url('empleados/nuevo_empleado') ?>">Ingreso</a></li>
+                                <li><a href="<?= base_url('empleados/ver_personal') ?>">Consulta</a></li>
                                 <li class="divider"></li>
-                                <li><a href="http://localhost/pruebas/empleados/ver_personal">Otra consulta</a></li>
-                                <li><a href="http://localhost/pruebas/empleados/nuevo_empleado">Otro Ingreso</a></li>
+                                <li><a href="<?= base_url('empleados/ver_personal') ?>">Otra consulta</a></li>
+                                <li><a href="<?= base_url('empleados/nuevo_empleado') ?>">Otro Ingreso</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?= base_url('productos/administracion') ?>">Administración</a></li>
                             </ul>
                         </li>
                     </ul>

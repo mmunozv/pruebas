@@ -38,6 +38,7 @@
 	<div>
 		<?php echo $output; ?>
 	</div>
+	<a href="<?= base_url() ?>">Inicio</a>
 </body>
 
 </html>

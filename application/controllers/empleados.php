@@ -26,6 +26,8 @@ class Empleados extends CI_Controller {
 	    $opciones['base_url'] = base_url().'empleados/ver_personal';
 	    $opciones['total_rows'] = $this->personal_model->filas();
 	    $opciones['uri_segment'] = 3;
+	    $opciones['first_link'] = 'Primero';
+	    $opciones['last_link'] = 'Último';
 	 
 	    $this->pagination->initialize($opciones);
 	 
