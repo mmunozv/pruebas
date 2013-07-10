@@ -51,7 +51,7 @@ class Productos extends CI_Controller {
 
     /* Aqui le decimos a grocery que estos campos son obligatorios */
     $crud->required_fields(
-      'id',
+      'id_tipo',
       'nombre',
       'descripcion',
       'precio_venta',
@@ -60,7 +60,7 @@ class Productos extends CI_Controller {
 
     /* Aqui le indicamos que campos deseamos mostrar */
     $crud->columns(
-      'id',
+      'id_tipo',
       'proveedor',
       'nombre',
       'descripcion',
