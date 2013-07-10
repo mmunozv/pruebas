@@ -38,7 +38,7 @@ class Productos extends CI_Controller {
     $crud = new grocery_CRUD();
 
     /* Seleccionamos el tema */
-    $crud->set_theme('datatables');
+    $crud->set_theme('flexigrid');
 
     /* Seleccionmos el nombre de la tabla de nuestra base de datos*/
     $crud->set_table('productos');
