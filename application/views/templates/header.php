@@ -35,7 +35,8 @@
                                 <li><a href="<?= base_url('empleados/nuevo_empleado') ?>">Otro Ingreso</a></li>
                                 <li class="divider"></li>
                                 <li><a href="<?= base_url('productos/administracion') ?>">Administración</a></li>
-                            </ul>
+                                <li class="divider"></li>
+                                <li><a href="<?= base_url('mantenimiento') ?>">CRUD</a></li>                                            </ul>
                         </li>
                     </ul>
 
